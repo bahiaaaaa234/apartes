@@ -1,0 +1,61 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #000000, #4d4c4c);
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.base {
+    position: relative;
+    height: 89vh;
+    width: 90vw;
+    text-align: center;
+    border-radius: 2%;
+    overflow: hidden;
+    background-image: url(./assets/back.jpg);
+    background-size: cover;
+}
+
+.base::before,
+.base::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.base::before {
+    left: 0;
+    background-color: red;
+    z-index: 1;
+}
+
+.base::after {
+    right: 0;
+    background-color: blue;
+    z-index: 1;
+}
+
+.base:hover::before {
+    opacity: 0.2;
+}
+
+.base:hover::after {
+    opacity: 0.2;
+}
+

@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #000000, #4d4c4c);
+    min-height: 100vh;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.base{
+    height: 80vh;
+    width: 80vw;
+    background-color: yellowgreen;
+    text-align: center;
+    border-radius: 2%;
+background-image: url(./);
+}
